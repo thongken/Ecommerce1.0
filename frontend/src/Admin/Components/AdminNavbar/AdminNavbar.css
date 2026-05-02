@@ -1,0 +1,78 @@
+.AdminNavbar-container {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+}
+
+.AdminNavbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AdminNavbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.AdminNavbar-menu-btn {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.AdminNavbar-menu-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.AdminNavbar-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.AdminNavbar-back-btn:hover {
+  color: #111827;
+}
+
+.AdminNavbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.AdminNavbar-greeting {
+  color: #374151;
+}
+
+.AdminNavbar-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.AdminNavbar-logout-btn:hover {
+  background-color: #dc2626;
+}
+
+@media (min-width: 1024px) {
+  .AdminNavbar-menu-btn {
+    display: none;
+  }
+}

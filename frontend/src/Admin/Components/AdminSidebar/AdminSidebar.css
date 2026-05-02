@@ -1,0 +1,103 @@
+.AdminSidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+}
+
+.AdminSidebar-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 16rem;
+  background: linear-gradient(to bottom, #16a34a, #15803d);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.AdminSidebar-container.open {
+  transform: translateX(0);
+}
+
+.AdminSidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.AdminSidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.AdminSidebar-title {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.AdminSidebar-close-btn {
+  color: white;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.AdminSidebar-close-btn:hover {
+  background-color: #166534;
+}
+
+.AdminSidebar-nav {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.AdminSidebar-nav * {
+    color: #dcfce7
+}
+
+.AdminSidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #dcfce7;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.AdminSidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.AdminSidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .AdminSidebar-overlay {
+    display: none;
+  }
+
+  .AdminSidebar-container {
+    position: static;
+    transform: translateX(0);
+  }
+
+  .AdminSidebar-close-btn {
+    display: none;
+  }
+}

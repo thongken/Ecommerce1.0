@@ -1,0 +1,138 @@
+.VoucherForm-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.VoucherForm-container {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 42rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.voucher-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.voucher-modal-title {
+  font-size: 1.5rem;
+  color: #111827;
+  margin: 0;
+}
+
+.voucher-modal-close-btn {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.voucher-modal-close-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.voucher-modal-form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.voucher-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.voucher-form-label {
+  display: block;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.voucher-form-input,
+.voucher-form-select,
+.voucher-form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.voucher-form-input:focus,
+.voucher-form-select:focus,
+.voucher-form-textarea:focus {
+  border-color: #9333ea;
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.voucher-form-textarea {
+  resize: none;
+  height: 9rem;
+}
+
+.voucher-form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.voucher-form-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.voucher-form-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.voucher-cancel-btn {
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+}
+
+.voucher-cancel-btn:hover {
+  background-color: #f9fafb;
+}
+
+.voucher-form-btn.btn-add {
+  background-color: #9333ea;
+  color: white;
+}
+
+.voucher-form-btn.btn-add:hover {
+  background-color: #7e22ce;
+}
+
+@media (min-width: 768px) {
+  .voucher-form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

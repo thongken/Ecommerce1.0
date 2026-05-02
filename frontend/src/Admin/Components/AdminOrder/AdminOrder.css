@@ -1,0 +1,170 @@
+
+.AdminOrderRow {
+  cursor: pointer;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.AdminOrderRow.expanded {
+  background: hsl(34, 65%, 90%);
+}
+.AdminOrderRow.expanded td:first-child {
+  background: hsl(30, 31%, 80%);
+}
+
+.AdminOrderRow:not(.expanded):hover {
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+
+.AdminOrder-details-row hr {
+  border-color: hsl(34, 50%, 90%);
+}
+
+
+
+.AdminOrder-details-content {
+  padding: 20px 40px;
+  background: hsl(34, 60%, 97%);
+}
+
+.AdminOrder-details-content .products-list {
+  background: hsl(34, 60%, 99%);
+}
+
+.AdminOrder-details-content .listitem {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.AdminOrder-details-content .listitem img {
+  background: white;
+  height: 70px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.AdminOrder-details-content .amount p,
+.AdminOrder-details-content .amount b {
+  display: inline;
+  padding-right: 20px;
+}
+
+.AdminOrder-details-content .shipping-address-block {
+  padding: 20px;
+  background: white;
+}
+
+.AdminOrder-details-content .shipping-address-block h3 {
+  color: hsl(108, 59%, 40%);
+}
+
+
+
+/* ========== TRẠNG THÁI ========== */
+.AdminOrderRow .status {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 25px;
+  
+  font-weight: bold;
+ 
+  min-width: 80px;
+  text-align: center;
+}
+
+
+
+/* ========== NÚT HÀNH ĐỘNG ========== */
+.action-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #2563eb;
+}
+
+/* ========== Bảng hiển thị đơn hàng ========== */
+.AdminOrderRow td {
+  padding: 1rem 1.5rem;
+
+  text-align: center;
+  vertical-align: middle;
+
+  
+  font-size: 0.9rem;
+  word-break: break-word;
+  transition: all 0.2s ease;
+}
+
+
+.AdminOrderRow td img {
+  padding: 0;
+  height: 4rem;
+  background: white;
+}
+
+
+/* Styling cho các cột cụ thể */
+.AdminOrderRow td:first-child {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.AdminOrderRow td:nth-child(2) {
+  max-width: 600px;
+  text-align: start;
+  padding: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.AdminOrderRow td:nth-child(3) {
+  font-weight: bold;
+  color: #dc2626;  
+}
+
+
+.AdminOrderRow td:nth-child(4) {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #16a34a;
+  word-break: keep-all;
+}
+
+
+
+/* ========== PAYMENT BADGES ========== */
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 25px;
+  
+  font-weight: bold;
+ 
+  min-width: 80px;
+  text-align: center;
+}
+
+.badge.method.CASH { background: hsl(183, 100%, 90%); color: hsl(193, 82%, 20%)}
+.badge.method.VNBANK { background: hsl(226, 100%, 90%); color: hsl(244, 55%, 20%) }
+.badge.method.INTCARD { background: hsl(42, 100%, 85%); color: hsl(38, 55%, 20%) }
+
+.badge.payment.unpaid { background: hsl(22, 100%, 90%); color: hsl(15, 79%, 30%) }
+.badge.payment.paid { background: hsl(152, 81%, 90%); color: hsl(163, 88%, 20%) }
+.badge.payment.refunding { background: hsl(258, 81%, 90%); color: hsl(251, 88%, 20%) }
+.badge.payment.refunded { background: hsl(258, 81%, 90%); color: hsl(251, 88%, 20%) }
+.badge.payment.failed { background: hsl(0, 86%, 90%); color: hsl(0, 70%, 30%) }
+

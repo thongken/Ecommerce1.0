@@ -1,0 +1,89 @@
+
+.voucher-name {
+  color: #111827;
+  margin: 0;
+}
+
+.voucher-code {
+  color: #111827;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+
+.discount-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.discount-badge.percentage {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+.discount-badge.fixed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.discount-value {
+  color: #d33a3a;
+  font-weight: 600;
+}
+.discount-value.fixed {
+  color: #48c438;
+  font-weight: 600;
+}
+
+.voucher-description {
+  color: #4b5563;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.expiry-date {
+  color: #d63838;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.usage-count {
+  color: #4494ef;
+  font-weight: 600;
+}
+
+.voucher-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.voucher-edit-btn,
+.voucher-delete-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.voucher-edit-btn {
+  background-color: #3b82f6;
+}
+
+.voucher-edit-btn:hover {
+  background-color: #2563eb;
+}
+
+.voucher-delete-btn {
+  background-color: #ef4444;
+}
+
+.voucher-delete-btn:hover {
+  background-color: #dc2626;
+}
